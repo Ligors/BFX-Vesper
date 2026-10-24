@@ -1,4 +1,4 @@
-# 🛡️ BFX VESPER (Raksha Kavach)
+# 🛡️ BFX VESPER
 ### *Autonomous On-Device & Cloud Anti-Scam Shield for Elders & Feature Phones*
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -11,13 +11,18 @@
 
 ---
 
-## 🌟 What Makes Vesper Unique?
+## 🌟 What Makes BFX Vesper Unique?
 
 ### 1. 📟 The Nokia Keypad Feature Phone AI Helpline
 Most modern scam safety solutions assume everyone owns a flagship smartphone with high-speed 5G. In India, **millions of senior citizens still rely on ₹1,200 basic Nokia / button keypad phones**.
 - **Speed-Dial `1` Protection:** Elders can speed-dial `1` on their keypad phone to connect to the Vesper Cloud Voice AI Helpline.
 - **Multilingual Spoken Interaction:** The elder simply speaks (*"Inspector said my Aadhaar has a drugs parcel..."*).
 - **Instant Voice Verdict & Guardian Alert:** Vesper speaks back to calm the elder down, confirms it's a 100% scam, and immediately dispatches an urgent alert to their family guardian on Telegram with the transcript and caller ID.
+
+> [!IMPORTANT]
+> **📢 Community Call — Real Nokia & Telecom Implementation:**  
+> The Nokia button phone feature is currently fully implemented and simulated in the Cloud Voice AI pipeline (with real-time STT, audio feedback, scam classification, and guardian Telegram dispatch). Because we are students who built this during a hackathon, we don't have the funding to purchase enterprise Indian telecom IVR lines / toll-free numbers and integrate carrier SIP gateways for live dumb phones.  
+> **If anyone from the telecom or open-source community is interested in taking this forward to real keypad phones across India, please feel free to fork or import this code and connect real telecom lines!** The underlying AI detection and cloud logic work 100% and are completely ready.
 
 ### 2. 🛡️ Autonomous Call Guard & App Isolation
 - **Coercion & Urgency Engine:** Listens on speakerphone for Indian cybercrime coercion tactics (*"digital arrest"*, *"urgent OTP"*, *"CBI Mumbai"*, *"electricity disconnection in 10 minutes"*).
@@ -50,7 +55,34 @@ Most modern scam safety solutions assume everyone owns a flagship smartphone wit
 | **Tier 2: BYOK Cloud** | Free Groq API (Llama 3 / Qwen) or Google Gemini 2.0 Flash | **₹0 (Free)** | Direct Device-to-AI (No middleman server) |
 
 > [!NOTE]
-> **No shared backend bills or tracking:** Vesper is built with **Bring Your Own Key (BYOK)**. Users and developers can run it completely offline or enter their own free API keys in Settings.
+> **No shared backend bills or tracking:** BFX Vesper is built with **Bring Your Own Key (BYOK)**. Users and developers can run it completely offline or enter their own free API keys in Settings.
+
+---
+
+## 🔑 How to Get Free API Keys (Step-by-Step)
+
+You can run BFX Vesper 100% free using your own API keys. Here is how to obtain them in 60 seconds:
+
+### 1. Groq API Key (Recommended for Ultra-Fast Audio Transcription & Text)
+1. Go to the [Groq Cloud Console](https://console.groq.com/keys).
+2. Sign up or log in with your GitHub or Google account (Free tier includes generous RPM limits).
+3. Click **"Create API Key"**, give it a name, and copy the key (starts with `gsk_...`).
+4. Paste the key in `APP/bfx-vesper/.env` under `GROQ_API_KEY=` or enter it directly in the app's **Settings ⚙️ $\rightarrow$ Custom API Key**.
+
+### 2. Google Gemini API Key
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Sign in with your Google account.
+3. Click **"Create API Key"** $\rightarrow$ select a project $\rightarrow$ copy the key (starts with `AIza...`).
+4. Paste the key in `APP/bfx-vesper/.env` under `GEMINI_API_KEY=` or select `GEMINI` in the app's Settings.
+
+### 3. Telegram Guardian Bot Token & Chat ID (Optional — for live alert alerts)
+1. Open the **Telegram** app and search for `@BotFather`.
+2. Send `/newbot`, choose a name and username for your bot, and copy the **HTTP API Token**.
+3. To find your Chat ID, start a chat with `@userinfobot` on Telegram and copy your `Id`.
+4. Paste them into `APP/bfx-vesper/.env` under `TELEGRAM_BOT_TOKEN=` and `TELEGRAM_CHAT_ID=`.
+
+### 4. 100% Offline Mode (Zero Keys Needed!)
+If you don't want to use any API keys, simply select **Offline Mode** in the app's Settings! The app will use the local rule engine and browser-based Gemma model without touching the internet.
 
 ---
 
@@ -58,14 +90,11 @@ Most modern scam safety solutions assume everyone owns a flagship smartphone wit
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher)
-- Free API keys (Optional for cloud models):
-  - [Google AI Studio](https://aistudio.google.com/) (Gemini)
-  - [Groq Cloud Console](https://console.groq.com/) (Groq Llama/Qwen)
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/bfx-vesper.git
-cd bfx-vesper
+git clone https://github.com/Ligors/BFX-Vesper.git
+cd BFX-Vesper
 ```
 
 ### 2. Configure Environment (Optional)
@@ -73,7 +102,7 @@ cd bfx-vesper
 cd APP/bfx-vesper
 cp .env.example .env
 ```
-*(You can also leave `.env` empty and input your keys directly in the web UI Settings!)*
+*(You can also leave `.env` empty and enter your keys directly in the web UI Settings!)*
 
 ### 3. Install & Start
 ```bash
@@ -96,7 +125,7 @@ cd APP/android-vesper
 ---
 
 ## 🔒 Security & Disclosure
-- **Zero Credentials Committed:** All secret API keys and tokens have been scrubbed.
+- **Zero Credentials Committed:** All secret API keys and tokens have been scrubbed from this repository.
 - **Local Storage:** Passcodes and guardian settings are stored securely in local browser storage or server config.
 
 ---
