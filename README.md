@@ -131,8 +131,8 @@ Developed with ❤️ by **Team Ligors** at **NextAI InnoHack 2026** (Vellore In
 
 | Member | Role | GitHub |
 |---|---|---|
-| **Prithish Raj T** | 👑 **Team Leader** & Full-Stack / AI Lead | [@Ligors](https://github.com/Ligors) · [@Prithish-22](https://github.com/Prithish-22) |
-| **Jegannath G** | 🚀 **Team Member** & Core Contributor | [@Ligors](https://github.com/Ligors) |
+| **Prithish Raj T** | 👑 **Co-Creator & Lead** | [@Ligors](https://github.com/Ligors) · [@Prithish-22](https://github.com/Prithish-22) |
+| **Jegannath G** | 👑 **Co-Creator & Lead** | [@Ligors](https://github.com/Ligors) |
 
 ---
 
