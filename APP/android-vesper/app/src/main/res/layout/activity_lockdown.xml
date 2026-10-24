@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#991B1B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚨"
+            android:textSize="50sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BFX VESPER"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.06"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMERGENCY SCAM LOCKDOWN"
+            android:textColor="#FEE2E2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvScamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCAM RISK SCORE: 92/100"
+            android:textColor="#FEF08A"
+            android:background="#450A0A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvLockReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active scam detected by Call Guard. Phone is locked until verified."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvCallingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 Alerting Guardian: Dialing now..."
+            android:textColor="#FFFFFF"
+            android:background="#14532D"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EF4444"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 1. Passcode Section (Default) -->
+        <LinearLayout
+            android:id="@+id/llPasscodeSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter App Passcode to Unlock:"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPasscode"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#FFFFFF"
+                android:hint="Enter 6-digit passcode"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:textColorHint="#94A3B8"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:importantForAutofill="no"
+                android:layout_marginTop="8dp"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnUnlock"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Unlock Phone"
+                android:backgroundTint="#0F172A"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Forgot Passcode? Unlock with Passphrase"
+                android:background="@android:color/transparent"
+                android:textColor="#FEF08A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- 2. Passphrase Recovery Section (Initially hidden) -->
+        <LinearLayout
+            android:id="@+id/llForgotSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Recovery Passphrase:"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassphrase"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#FFFFFF"
+                android:hint="Enter your recovery passphrase"
+                android:inputType="textPassword"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textColorHint="#94A3B8"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:importantForAutofill="no"
+                android:layout_marginTop="8dp"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnUnlockWithPhrase"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Unlock with Passphrase"
+                android:backgroundTint="#0F172A"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnBackToPasscode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="← Back to 6-digit Passcode"
+                android:background="@android:color/transparent"
+                android:textColor="#FEF08A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnCall1930"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Dial 1930"
+                android:backgroundTint="#7F1D1D"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnCallGuardian"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Call Guardian"
+                android:backgroundTint="#1E3A8A"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+# Dependency directories
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables & secrets
+.env
+.env*.local
+*.key
+*.pem
+*.p8
+*.p12
+
+# Heavy binaries & tool downloads
+*.zip
+*.tar.gz
+*.exe
+cloudflared.exe
+cmdline-tools.zip
+
+# Android build outputs & local config
+.gradle/
+build/
+*/build/
+app/build/
+local.properties
+.cxx/
+*.apk
+*.aab
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local runtime data & uploads
+data/store.json
+uploads/
+*.log
+*.wav

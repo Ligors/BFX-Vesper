@@ -1,0 +1,13 @@
+Vesper Web Shield bundled blocklists
+Downloaded: 2026-10-23
+Project: https://github.com/blocklistproject/Lists
+Phishing: https://raw.githubusercontent.com/blocklistproject/Lists/master/alt-version/phishing-nl.txt
+Gambling: https://raw.githubusercontent.com/blocklistproject/Lists/master/alt-version/gambling-nl.txt
+Repository license: https://raw.githubusercontent.com/blocklistproject/Lists/master/LICENSE
+See LICENSE-blocklistproject.txt for the license supplied by the repository.
+Original list headers are retained, including their upstream modification dates.
+
+These lists are a bundled snapshot, not a live reputation service.
+Matches include subdomains. Category membership is not proof of malicious intent.
+Gambling blocking is a guardian-controlled preference.
+No URLs or browsing history are uploaded to Vesper's server.

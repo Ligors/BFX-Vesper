@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.BFXVesper" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@color/paper</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.BFXVesper.Lockdown" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/sindoor</item>
+        <item name="android:statusBarColor">@color/sindoor</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

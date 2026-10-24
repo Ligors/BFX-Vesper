@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BFX VESPER SPAM DETECTION</string>
+    <string name="accessibility_service_description">BFX VESPER SPAM DETECTION: Detects active scam patterns during calls and temporarily secures financial &amp; remote access apps until confirmed by your trusted guardian.</string>
+    <string name="callguard_channel_name">Call Guard Protection</string>
+    <string name="callguard_channel_desc">Active background scam call monitoring</string>
+</resources>

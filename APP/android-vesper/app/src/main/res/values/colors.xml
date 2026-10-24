@@ -1,0 +1,9 @@
+<resources>
+    <color name="primary">#1C1B1F</color>
+    <color name="paper">#F0EEE9</color>
+    <color name="sindoor">#D32F2F</color>
+    <color name="neem">#2E7D32</color>
+    <color name="marigold">#F57F17</color>
+    <color name="ink">#111111</color>
+    <color name="white">#FFFFFF</color>
+</resources>
