@@ -2,12 +2,13 @@
 ### *Autonomous On-Device & Cloud Anti-Scam Shield for Elders & Feature Phones*
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Hackathon Winner](https://img.shields.io/badge/VIT%20Hackathon-1st%20Place%20Winner%20%F0%9F%8F%86-gold)](#)
+[![Hackathon Winner](https://img.shields.io/badge/NextAI%20InnoHack%202026-1st%20Place%20Winner%20%F0%9F%8F%86-gold)](https://vit.ac.in/event/nextai-innohack-2026)
 [![Privacy First](https://img.shields.io/badge/Privacy-100%25%20Offline%20First-green)](#)
 [![BYOK](https://img.shields.io/badge/AI-Bring%20Your%20Own%20Key-purple)](#)
 
-> **Winner of 1st Place at VIT Hackathon 2026 🏆**  
-> Tailored specifically for Indian elders, senior citizens, and keypad phone users to combat digital arrests, fake payment mod APKs, parcel/courier drug scams, and SMS/OTP phishing.
+> **🏆 1st Place Winner at NextAI InnoHack 2026**  
+> *Organized by SCOPE (School of Computer Science and Engineering), Vellore Institute of Technology (VIT)*  
+> Built during a 24-Hour AI Hackathon (October 22–23, 2026) by **Team Ligors**. Tailored specifically for Indian elders, senior citizens, and keypad phone users to combat digital arrests, fake payment mod APKs, parcel/courier drug scams, and SMS/OTP phishing.
 
 ---
 
@@ -121,6 +122,17 @@ The native Android wrapper is located in `APP/android-vesper/`.
 cd APP/android-vesper
 ./gradlew assembleDebug
 ```
+
+---
+
+## 👥 Team Ligors
+
+Developed with ❤️ by **Team Ligors** at **NextAI InnoHack 2026** (Vellore Institute of Technology):
+
+| Member | Role | GitHub |
+|---|---|---|
+| **Prithish Raj T** | 👑 **Team Leader** & Full-Stack / AI Lead | [@Ligors](https://github.com/Ligors) · [@Prithish-22](https://github.com/Prithish-22) |
+| **Jegannath G** | 🚀 **Team Member** & Core Contributor | [@Ligors](https://github.com/Ligors) |
 
 ---
 
