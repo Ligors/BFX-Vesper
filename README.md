@@ -8,7 +8,7 @@
 
 > **🏆 1st Place Winner at NextAI InnoHack 2026**  
 > *Organized by SCOPE (School of Computer Science and Engineering), Vellore Institute of Technology (VIT)*  
-> Built during a 24-Hour AI Hackathon (October 22–23, 2026) by **Team Ligors**. Tailored specifically for Indian elders, senior citizens, and keypad phone users to combat digital arrests, fake payment mod APKs, parcel/courier drug scams, and SMS/OTP phishing.
+> Built during a 24-Hour AI Hackathon (October 22–23, 2026) by **Team Ligors** from **Voorhees College, Vellore**. Tailored specifically for Indian elders, senior citizens, and keypad phone users to combat digital arrests, fake payment mod APKs, parcel/courier drug scams, and SMS/OTP phishing.
 
 ---
 
@@ -127,12 +127,12 @@ cd APP/android-vesper
 
 ## 👥 Team Ligors
 
-Developed with ❤️ by **Team Ligors** at **NextAI InnoHack 2026** (Vellore Institute of Technology):
+Developed with ❤️ by **Team Ligors** from **Voorhees College, Vellore** at **NextAI InnoHack 2026** (Hosted by Vellore Institute of Technology):
 
-| Member | Role | GitHub |
-|---|---|---|
-| **Prithish Raj T** | 👑 **Co-Creator & Lead** | [@Ligors](https://github.com/Ligors) · [@Prithish-22](https://github.com/Prithish-22) |
-| **Jegannath G** | 👑 **Co-Creator & Lead** | [@Ligors](https://github.com/Ligors) |
+| Member | College / Affiliation | Role | GitHub |
+|---|---|---|---|
+| **Prithish Raj T** | 🏛️ Voorhees College, Vellore | 👑 **Co-Creator & Lead** | [@Ligors](https://github.com/Ligors) · [@Prithish-22](https://github.com/Prithish-22) |
+| **Jegannath G** | 🏛️ Voorhees College, Vellore | 👑 **Co-Creator & Lead** | [@Ligors](https://github.com/Ligors) |
 
 ---
 
